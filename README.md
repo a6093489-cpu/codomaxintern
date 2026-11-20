@@ -40,6 +40,4 @@ Then visit `http://localhost:8000`.
 - `assets/images/profile-placeholder.svg` — generic temporary profile image
 - `assets/images/favicon.svg` — AS monogram favicon
 
-## Original Project Attribution
 
-This personalized portfolio is adapted from the original Codomax Internship project by Bhoomi Soni: [github.com/bhoomi999ii/codomaxintern](https://github.com/bhoomi999ii/codomaxintern).
