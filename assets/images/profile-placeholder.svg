@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="title">
+  <title id="title">Generic professional profile placeholder</title>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101b2c" />
+      <stop offset="1" stop-color="#172d42" />
+    </linearGradient>
+    <linearGradient id="figure" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8eb8c9" />
+      <stop offset="1" stop-color="#547c91" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#background)" />
+  <circle cx="320" cy="285" r="190" fill="none" stroke="#51d5c5" stroke-opacity=".2" stroke-width="2" />
+  <circle cx="320" cy="285" r="155" fill="none" stroke="#77a7bf" stroke-opacity=".2" stroke-width="2" />
+  <circle cx="320" cy="274" r="94" fill="url(#figure)" />
+  <path d="M128 692c15-133 91-215 192-215s177 82 192 215" fill="url(#figure)" />
+  <path d="M128 692h384" stroke="#51d5c5" stroke-opacity=".55" stroke-width="3" />
+</svg>

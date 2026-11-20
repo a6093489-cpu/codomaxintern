@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- * BHOOMI SONI — PORTFOLIO SCRIPT v3.0
+ * Aditya Sahani — PORTFOLIO SCRIPT v3.0
  * Features: Three.js BG · 3D Parallax Scroll · Photo Upload · Card Tilt
  *           Theme Toggle · Skill Category Tabs · Dynamic Skill Manager
  *           Scroll Reveal · Progress Bar · Copy Email · Form Validation
@@ -286,13 +286,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // 9.  Typewriter
   // ─────────────────────────────────────────────────────────────────────────
   const roles = [
-    'Frontend Developer',
-    'HTML & CSS Craftsman',
-    'JavaScript Enthusiast',
-    'Docker Explorer',
+    'Web Developer',
+    'Cloud Computing',
+    'Software Development',
+    'Java · C · Python',
     'Codomax Intern',
-    'Web Artisan',
-    'UI Builder'
+    'Practical Projects'
   ];
   const tw = document.getElementById('typewriter-text');
   let ri = 0, ci = 0, del = false;
@@ -531,7 +530,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const emailEl = document.getElementById('email-address');
 
   copyBtn?.addEventListener('click', () => {
-    navigator.clipboard.writeText(emailEl?.textContent.trim() || '')
+    const email = emailEl?.textContent.trim() || '';
+    if (!email || email.toLowerCase().includes('not provided')) {
+      showToast('Email address not provided.', 'info');
+      return;
+    }
+    navigator.clipboard.writeText(email)
       .then(() => {
         copyBtn.classList.add('copied');
         showToast('Email copied! 📋', 'success');
@@ -581,7 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn && (submitBtn.disabled = false);
       document.getElementById('contact-form').reset();
       if (charCount) charCount.textContent = '0 / 500';
-      showToast('Message sent! 🚀 I\'ll reply within 24h.', 'success', 4500);
+      showToast('Demo only: contact form delivery is not configured.', 'info', 4500);
     }, 1400);
   });
 
